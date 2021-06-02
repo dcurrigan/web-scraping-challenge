@@ -4,7 +4,7 @@ Week 12 MongDB and Web Scraping Homework
 > Created by Dale Currigan  
 > June 2021  
   
-![SQL](/static/surfs-up.png)    
+![web](/Resources/mission_to_mars.png)    
 
 ## Table of contents  
 * [Project Intro](#Project-Intro)  
