@@ -35,8 +35,8 @@ web-scraping-challenge
 |  
 |    
 |__ mission_to_mars.ipynb               # Jupyter Notebook for the project
-|__ app.py                              # Table schemata for the database 
-|__ scrape_mars.py                      # Table schemata for the database
+|__ app.py                              # The Flask app for the project 
+|__ scrape_mars.py                      # Scrape functionality for the Flask app
 |__ README.md                           # This file
 |
 |__ templates/                          # Directory for html docs
