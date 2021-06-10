@@ -15,7 +15,7 @@ Week 12 MongDB and Web Scraping Homework
 * [Status](#Status)  
 
 # Project Intro
-This project covers the week 10 SQLAlchemy homework project - Surfs Up!
+This project covers the week 12 MongoDB and Webscraping homework project - Mission to Mars
   
 The project briefing was as follows:  
   
@@ -55,7 +55,6 @@ web-scraping-challenge
 |__ Resources/                          # Directory for images contained in the Readme   
 |   |__ meission_to_mars.png                  
 |
-|    
 
 ``` 
   
@@ -79,13 +78,15 @@ web-scraping-challenge
 |No|Name|Link|
 |-|-|-|
 |1| NASA Mars News         |https://redplanetscience.com/| 
-|2| JPL Mars Space Images |https://spaceimages-mars.com/|
-|3| Mars Facts                 |https://galaxyfacts-mars.com/|  
-|4| Mars Hemispheres                 |https://marshemispheres.com/|  
+|2| JPL Mars Space Images  |https://spaceimages-mars.com/|
+|3| Mars Facts             |https://galaxyfacts-mars.com/|  
+|4| Mars Hemispheres       |https://marshemispheres.com/|  
 
    
 # Contributors  
-- Dale Currigan [@dcurrigan](https://github.com/dcurrigan) - <dcurrigan@gmail.com>
+Dale Currigan 
+[@dcurrigan](https://github.com/dcurrigan) 
+<dcurrigan@gmail.com>
 
 
 ## Status
