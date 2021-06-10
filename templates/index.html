@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mission-to-Mars</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootswatach 'United' stylesheet -->
+  <link rel="stylesheet" href="../static/css/bootstrap.css"> 
+  <!-- Custom stylesheet for the project -->
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        
+        <!-- Title and scrape button -->
+        <!----------------------------->
+        <div class = "row justify-content-around">
+        
+            <div class = col-10>
+            
+                <div class="jumbotron text-center shadow" id="mars_title">
+                
+                    <h1><Strong>Mission to Mars</strong></h1>
+                    <p>The latest on all Mars related news and education</p>
+                    <a class="btn btn-primary btn-lg" href="/scrape" role="button">Get New Data</a>
+            
+                </div>
+        
+            </div>
+    
+        </div>
+
+        <div class= "row justify-content-around">
+            
+            <!--------  Mars News  -------->
+            <!----------------------------->
+            <div class= "col-10 outer_box shadow">
+
+                <div class = "row justify-content-around">
+                                      
+                    <div class = "col-10 inner_box">
+                        
+                        <h2><strong>Latest Mars News</strong></h2>
+                        <h3>{{mars.news_title}}</h3>
+                        <h5>{{mars.news_p}}</h5>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+
+        <div class= "row justify-content-around">
+            
+            <!----  Mars Feature Image  --->
+            <!----------------------------->
+            <div class= "col-5 outer_box shadow">
+                
+                <div class= "row justify-content-around">
+                    
+                    <div class = "col-11 inner_box">
+                        
+                        <h2><strong>Latest Mars Feature Image</strong></h2>
+                        <img src={{mars.feature_img}} alt="Mars Feature Image" id="feature_img">
+                                    
+                    </div>
+        
+                </div>
+
+            </div>
+            
+            <!---   Mars Facts Table  ----->
+            <!----------------------------->
+            <div class= "col-5 outer_box shadow">
+
+                <div class = "row justify-content-around">
+                    
+                    <div class = "col-11 inner_box"> 
+        
+                        <h2><strong>Mars Facts</strong></h2>
+                        
+                        <table class="table table-bordered table-hover table-striped table-condensed">
+                            
+                            <thead id="my_table_header">
+                                <tr>
+                                    <th title="Field #1">Description</th>
+                                    <th title="Field #2">Mars</th>
+                                    <th title="Field #3">Earth</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>                
+                            
+                                {% if mars.comparison_table is defined %}
+                                    {% for key in mars.comparison_table['Mars'] %}
+                                        <tr>
+                                            <td>{{ key }}</td>
+                                            <td>{{ mars.comparison_table['Mars'][key] }}</td>
+                                            <td>{{ mars.comparison_table['Earth'][key] }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                {% endif %}        
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    
+                </div>
+                                           
+            </div>
+
+
+        </div>
+    
+        
+        <div class="row justify-content-around">
+
+            <!---   Mars Hemispheres  ----->
+            <!----------------------------->
+            <div class="col-10 outer_box shadow">
+            
+                <div class="row justify-content-around">
+                
+                    <div class = "col-10 inner_box">
+                        
+                        <h2 class="text-center"><strong>Mars Hemispheres</strong></h2>
+                
+                    </div>
+                
+                </div>
+            
+                <div class="row justify-content-around">
+
+                    <!-- create cards for each of the mars hemisphers -->
+                    {% for hemi in mars.hemi_images %}
+                        <div class="card col-md-5 shadow hemi_img">
+                            <img src={{hemi['sample_url']}} class="card-img-top" alt="...">
+                            <h3 class="card-title hemi_text_top"><strong>{{hemi['title']}}</strong></h3>
+                            <h5 class="hemi_text_bottom">
+                                <a href={{hemi['original_url']}}>
+                                    Click Here
+                                </a> 
+                                to download the high resolution image
+                            </h5>
+                        </div> 
+                    {% endfor %}   
+                
+                </div>           
+            
+            </div>
+        
+        </div>
+         
+    </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
