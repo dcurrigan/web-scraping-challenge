@@ -61,12 +61,18 @@ web-scraping-challenge
   
 # Setup 
   
-* Open Climate Analysis.ipynb as a Jupyter Notebook  
-* Once opened, Select *Restart & Run All* from Kernel menu  
-* The Notebook can now be navigated using the links to observe the data analysis  
+##### Part 1 - Webscrape  
+* Open mission_to_mars.ipynb as a Jupyter Notebook  
+* Once opened, Select *Restart & Run All* from Kernel menu to view the results  
   
-* Run app.py with the commond 'python app.py' from the terminal
-* Instructions for navigating the routes are found on the home page   
+  
+##### Part 2 - MongoDB and Flask Application  
+* First initialise a Mongo databse by typing 'mongod' at the terminal (requires installation of MongoDB)
+* Run app.py with the commond 'python app.py' from the terminal  
+* The page will initially be empty except for the title and 'Get New Data' button as the Mongo database is not yet populated with data  
+* Click the 'Get New Data' button to perform a scrape of the four sites  
+* The App will load the data to the page once the scrape is complete
+* The scrape cna be repeated as desired    
 
 # Websites Scraped  
   
@@ -77,14 +83,9 @@ web-scraping-challenge
 |3| Mars Facts                 |https://galaxyfacts-mars.com/|  
 |4| Mars Hemispheres                 |https://marshemispheres.com/|  
 
-
-  
-
-
-
-    
+   
 # Contributors  
-- [@dcurrigan](https://github.com/dcurrigan) - <dcurrigan@gmail.com>
+- Dale Currigan [@dcurrigan](https://github.com/dcurrigan) - <dcurrigan@gmail.com>
 
 
 ## Status
