@@ -84,8 +84,8 @@ web-scraping-challenge
 
    
 # Contributors  
-Dale Currigan 
-[@dcurrigan](https://github.com/dcurrigan) 
+Dale Currigan  
+[@dcurrigan](https://github.com/dcurrigan)  
 <dcurrigan@gmail.com>
 
 
