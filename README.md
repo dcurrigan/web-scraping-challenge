@@ -19,16 +19,15 @@ This project covers the week 10 SQLAlchemy homework project - Surfs Up!
   
 The project briefing was as follows:  
   
-*Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area.* 
+*In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.* 
 
 The project includes the following elements:  
-   - Precipitation Analysis  
-   - Station Analysis  
-   - Flask Climate App  
-   - Additional Bonus Analyses:  
-        - Temperature 1  
-        - Temperature 2  
-        - Daily Rainfall Average  
+* Webscraping of:
+   - NASA Mars News  
+   - JPL Mars Space Images  
+   - Mars Facts  
+   - Mars Hemispheres:  
+* MongoDB and Flask Application  
   
 # Project Structure  
 ```
