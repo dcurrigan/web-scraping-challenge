@@ -10,7 +10,7 @@ Week 12 MongDB and Web Scraping Homework
 * [Project Intro](#Project-Intro)  
 * [Project Structure](#Project-Structure)  
 * [Setup](#Setup)  
-* [Analysis](#Analysis)  
+* [Websites Scraped](#Websites-Scraped)  
 * [Contributors](#Contributors)  
 * [Status](#Status)  
 
@@ -68,6 +68,8 @@ web-scraping-challenge
 * Run app.py with the commond 'python app.py' from the terminal
 * Instructions for navigating the routes are found on the home page   
 
+# Websites Scraped  
+  
 |No|Name|Link|
 |-|-|-|
 |1| NASA Mars News         |https://redplanetscience.com/| 
